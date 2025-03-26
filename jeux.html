@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Jeux</title>
+	<style>
+.footer {
+    position: fixed;
+    left: 0px;
+    bottom:0px;
+    width: 100%;
+    height: 110px;
+    background-color: black;
+}
+.header {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: #707070;
+    font-family: Microsoft Yi Baiti;
+    font-size: 35px;
+}
+html {
+	overflow: hidden;
+	max-width: 1920px;
+    background-image: radial-gradient(#5D005D,#130013);
+	height: 100%;
+    position: relative;
+    min-height: 100%;
+}
+.menu:hover {
+    background-color: rgba(255,255,255,0.075);
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+		
+.jeux{
+		position: absolute;
+		bottom: 104px;
+		left: 0px;
+		width: 374px;
+		height: 85%;
+  		transition: all 500ms ease;
+	    opacity: 1;
+}
+.jeux:hover{
+	position: absolute;
+	bottom: 60px;
+	left: -18px;
+	width: 410px;
+	height: 95%;
+   	transition: all 500ms ease;
+	opacity: 0.7;
+}
+.grad2 {
+    filter: none;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.grad2:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+}
+		#resultats{
+			position: absolute;
+			opacity: 0;
+			top: 46%;
+			left: 460px;
+			transition: all 600ms ease;
+		}
+h1 {
+    font-size: 42px;
+    color: white;
+    font-family: Georgia;
+    font-style: italic;
+	transition: all 600ms ease;
+}
+
+a {
+  color:#707070;
+  text-decoration: none; /* no underline */
+}
+		
+p {
+    font-size: 25px;
+    font-family: MingLiU-ExtB;
+    color: white;
+	transition: all 600ms ease;
+	position: absolute;
+	left: 475px;
+	top: -16%;
+	margin-right: 580px;
+	letter-spacing: -1.5px;
+}
+	</style>
+</head>
+
+<body>
+	
+	<!-- Table des vidéos-->
+	<table name="Highlights" style="position: absolute; top: 8%; right: -20%;transition: all 600ms ease" width="200" height="80%" border="0">
+  <tbody>
+    <tr>
+      <td align="center" ><h1 style="margin-bottom: -5px">Highlights:</h1></td>
+    </tr>
+    <tr>
+      <td><iframe width="340"  height="191" src="https://www.youtube.com/embed/P-dm03LOz3w" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+    </tr>
+    <tr>
+      <td><iframe width="340" height="191" src="https://www.youtube.com/embed/3QsNskZzwkg" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+    </tr>
+    <tr>
+      <td><iframe width="340" height="191" src="https://www.youtube.com/embed/XLL9eQg-FW4" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+    </tr>
+  </tbody>
+</table>
+
+	<!--Description du jeu-->
+	<h1 name="desc" style="position: absolute; left: 420px; top: 0%">League of Legends:</h1>
+	<p name="desc">Etiam scelerisque nulla id pellentesque ornare. Phasellus sit amet ante non nisi interdum tincidunt. Donec cursus dapibus varius. Nullam vel lectus consectetur, tempus felis eget, volutpat quam. Etiam sed leo a sapien feugiat cursus sit amet sit amet nunc. Aliquam viverra massa ac augue maximus, et aliquet justo feugiat. Maecenas urna metus, volutpat sed neque ac, euismod rhoncus augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	
+	<!--Table des résultats-->
+	<div id="resultats" name="result" style="position: absolute; top: 47%; left: 470px">
+		<h1 style="margin-left: 150px">Résultats du dernier match:</h1>
+	<table cellspacing="0" width="900" border="0">
+  <tbody>
+    <tr align="center" >
+      <td style="border-top: 4px solid black"><img src="images/Reaper.png" width="180" alt="Logo Reaper"></td>
+      <td style="border-top: 4px solid black" ><img src="images/VS.png" alt="Image VS"></td>
+      <td style="border-top: 4px solid black"><img src="images/Rogue.png" alt="Logo Rogue"></td>
+      <td style="border-top: 4px solid black;border-left: 4px solid black"><img src="images/Victory.png" alt="Image Victoire"></td>
+    </tr>
+  </tbody>
+</table>
+		</div>
+	
+	<!--Images des jeux-->
+	<div>
+		<img class="jeux" border="5" src="images/Splat.png" alt="Splatoon">
+		<img class="jeux" name="jeu1" border="5" style="margin-left: 1536px" src="images/Counter.png" alt="Counter-Strike">
+		<img class="jeux" name="jeu1" border="5" style="margin-left: 1152px" src="images/Ow.png" alt="Overwatch">
+		<img class="jeux" name="jeu" style="margin-left: 384px" border="5" src="images/rocke.png" alt="Rocket League">
+		<img class="jeux" name="jeu" border="5" style="margin-left: 768px;opacity: 1" on onClick="myMove()" src="images/LoL.png" alt="League of Legends">
+	</div>
+	
+	
+	<!--Script pour déplacer les images, et la description, ainsi que pour faire apparaître les résultats-->
+	<script>
+function myMove() {
+	if(document.getElementsByName("jeu")[0].style.marginLeft != 0+"px"){
+		for(var i = 0; i < 2;i++){
+	  document.getElementsByName("jeu")[i].style.marginLeft = 0 + "px";
+      document.getElementsByName("jeu1")[i].style.bottom = -1080 + "px";
+	  document.getElementsByName("desc")[i].style.top = 8*(i+1) + "%";
+		}
+		document.getElementsByName("result")[0].style.opacity = 1;
+		document.getElementsByName("Highlights")[0].style.right = 5 + "%";
+	}else{
+		for(var i = 0; i < 2;i++){
+	  document.getElementsByName("jeu")[i].style.marginLeft = 384 * (i+1)+ "px";
+	  document.getElementsByName("jeu1")[i].style.bottom = 105 + "px";
+	  document.getElementsByName("desc")[i].style.top = -16*i + "%";
+		}
+		document.getElementsByName("result")[0].style.opacity = 0;
+		document.getElementsByName("Highlights")[0].style.right = -20 + "%";
+		
+	}
+		
+}
+</script>
+	
+
+	<!--Header et Menu de Navigation-->
+	<div class="header" > <a href="index.html" title="Accueuil"><img  style="float: left; margin-left: 20px" width="105px" src="images/Reaper.png" alt="Logo Reaper" /></a>
+  <p style="margin-top: 33px;left: 150px; font-family:Microsoft Yi Baiti; color: #707070;font-size: 35px; letter-spacing: 1px" >REAPER eSports</p>
+  <table  height="85" width="900" border="0" align="right" style="margin-top: -4px" >
+    <tbody align="center" >
+      <tr  >
+        <td class="menu" style="border-left: 0px" ><a href="index.html" title="Accueuil">ACCUEUIL</a></td>
+        <td class="menu" style="background-color: rgba(255,255,255,0.08);" width="190"><a href="jeux.html" title="Jeux">JEUX</a></td>
+        <td class="menu" width="190" ><a href="roster.html" title="Roster">ROSTER</a></td>
+        <td class="menu" width="300"><a href="Marchandise.html" title="Marchandises">MARCHANDISES</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+	
+	<!--Footer et Liens de Réseaux Sociaux-->
+<div class="footer" >
+  <table align="center" style="margin-top: 25px" width="400" border="0">
+    <tbody>
+      <tr align="center">
+        <td class="grad2"> <a href="https://www.facebook.com/esports.reapers/" target="_blank"> <img src="images/FBLogo.png" width="50px" alt="Facebook"></a></td>
+        <td class="grad2"> <a href="https://twitter.com/ReaperEsports10" target="_blank"> <img src="images/TWLogo.png" width="50px" alt="Twitter"></a></td>
+        <td class="grad2"> <a href="https://www.instagram.com/reaperesportsteam/" target="_blank"> <img src="images/IGLogo.png" width="50px" alt="Instagram"></a></td>
+        <td class="grad2"> <a href="https://www.youtube.com/channel/UCquwA8hiup6zIerKdDUi-YQ" target="_blank"> <img src="images/YTLogo.png" width="50px" alt="YouTube"></a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Marchandise</title>
+	
+		<script type="text/javascript" language="javascript">
+
+			function slideItBas(actionReturn) {
+	var slidingDiv = document.getElementById("d4");
+	if (actionReturn ==  "toRightBas") {//Vers la droite
+		if (parseInt(slidingDiv.style.left) <= 0 )
+		{
+			slidingDiv.style.left = 0 + "px";
+			d5.style.left=-122+"px";
+			d6.style.right=-122+"px";
+
+		}
+	}
+	if (actionReturn ==  "toLeftBas") {//Vers la gauche
+		slidingDiv.style.left = -2050 + "px";
+			d5.style.left=-122+"px";
+			d6.style.right=-122+"px";
+			
+
+	}
+}
+			function slideIt(actionReturn) {
+	var slidingDiv = document.getElementById("d1");
+	if (actionReturn ==  "toRight") {//Vers la droite
+		if (parseInt(slidingDiv.style.left) <= 0 )
+		{
+			slidingDiv.style.left = 0 + "px";
+			d2.style.left=-122+"px";
+			d3.style.right=-122+"px";
+
+		}
+	}
+	if (actionReturn ==  "toLeft") {//Vers la gauche
+		slidingDiv.style.left = -2050 + "px";
+			d2.style.left=-122+"px";
+			d3.style.right=-122+"px";
+			
+
+	}
+}
+			
+<!--Script pour le overlay-->
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+        </script>
+	<style>
+
+		html{
+			overflow-x: hidden;
+			width: 1920px;
+			height: 1080px;
+		}
+		.footer {
+    position: absolute;
+    left: 0;
+    bottom: -110px;
+    width: 100%;
+    height: 110px;
+    background-color: black;
+    color: hotpink;
+}
+.header {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: #707070;
+    font-family: Microsoft Yi Baiti;
+    font-size: 35px;
+}
+#bouton:hover {
+    filter: sepia(1) hue-rotate(165deg) saturate(2) brightness(1.5);
+}
+p {
+    font-size: 40px;
+    font-family: MingLiU-ExtB;
+    color: white;
+}
+
+a {
+	color:#707070;
+  text-decoration: none; /* no underline */
+}
+
+.menu:hover {
+    background-color: rgba(255,255,255,0.075);
+}
+html {
+	height: 1920px;
+	background-image: linear-gradient(#5D005D, #482E7E, #03C2E9);
+    overflow-y: scroll;
+    position: relative;
+    min-height: 100%;
+	scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 70px;
+    color: white;
+    font-family: Georgia;
+    font-style: italic;
+}
+.grad2 {
+    filter: none;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.grad2:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+}
+		#d1{
+			display:inline-block;
+			width: auto;
+			height: auto;
+			left:-10px;
+			position:relative;
+			transition: all 1000ms ease;
+		}
+				#d4{
+			display:inline-block;
+			width: auto;
+			height: auto;
+			left:-10px;
+			position:relative;
+			transition: all 1000ms ease;
+		}
+
+
+		
+table tr:first-child td {
+  border-top: 0;
+}
+table tr td:first-child {
+  border-left: 0;
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table tr td:last-child {
+  border-right: 0;
+}
+
+		
+		.centrer {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+			text-align: center;
+}
+
+
+
+	</style>
+</head>
+
+<body style="" onload="myFunction();MM_preloadImages('images/shirt-2@2x.png','images/hoodie-3.png','images/flecheDroite-gros.png','images/flecheGauche-gros.png','images/beanie-2@2x.png','images/cup-2@2x.png','images/MERCHhood-gros.png','images/MERCHshirt-gros.png')">
+
+<div onClick="window.scrollTo(0,1920)">
+<p style="position: absolute; top: 850px;right: 900px">Articles</p>
+<img src="images/FlecheBas.png" width="48" height="23" alt="Fleche vers le bas" style="position: absolute;top: 940px;right: 960px"/>
+</div>	
+	<!--Header-->
+	<div class="header" >
+	<a href="index.html" title="Accueuil"><img  style="float: left; margin-left: 20px" width="105px" src="images/Reaper.png" alt="Logo Reaper" /></a>
+	
+  <p style="float:left; margin-top: 20px; margin-left: 30px; font-family:Microsoft Yi Baiti; color: #707070;font-size: 35px" >REAPER eSports</p>
+  <table  height="85" width="900" border="0" align="right" style="margin-top: -4px" >
+    <tbody align="center" >
+      <tr>
+        <td class="menu" ><a href="index.html" title="Accueuil">ACCUEUIL</a></td>
+        <td class="menu" width="190"><a href="jeux.html" title="Jeux">JEUX</a></td>
+        <td class="menu" width="190" ><a href="roster.html" title="Roster">ROSTER</a></td>
+        <td style="background-color: rgba(255,255,255,0.08)"  width="300"><a href="Marchandise.html" title="Marchandises">MARCHANDISES</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+	<!--Tableau images demo d'équipe-->
+<table width="200" style="margin-left: -1%" >
+  <tbody>
+    <tr>
+      <td><img src="./images/team1.png" width="950" height="602" alt="Photo demo chandails couleurs"/></td>
+      <td><img src="./images/team-1.png" width="1000" height="602" alt="Photo demo chandails blancs"/>
+        </td>
+    </tr>
+  </tbody>
+</table>
+<!--Affichage titre-->
+		<div class="centrer">
+<h1>Magasin de Marchandises</h1>
+		
+		<h1>REAPER</h1>
+</div>
+	
+<p style="position: absolute; top: 1110px;left: 120px">Hauts</p>
+	
+<div id="d1">
+  <!--Tableau des hauts-->
+<table width="200" border="0" cellpadding="15" style="position:absolute;top: 280px">
+  <tbody>
+
+    <tr>
+      <td><a href="https://brickymerch.com/" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('shirt','','images/MERCHshirt-gros.png',1)"><img src="images/MERCHshirt-petit.png" alt="Chandail blanc" width="317" height="254" id="shirt"></a>
+		</td>
+      <td><a href="https://brickymerch.com/" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image','','images/MERCHshirtGars-gros.png',0)"><img src="images/MERCHshirtGars-petit.png" alt="Humain chandail noir" width="317" height="254" id="Image" style="transition: all 400ms ease;"></a></td>
+      <td><a href="https://brickymerch.com/" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/MERCHshirtGamingcloser-3@2x.png',0)"><img src="images/MERCHshirtGamingcloser-2@2x.png" alt="Chandail noir" width="317" height="254" id="Image2"></a></td>
+      <td><a href="https://brickymerch.com/" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','images/MERCHhoodHumain-gros.png',0)"><img src="images/MERCHhoodHumain-petit.png" alt="Hoodie humain" width="317" height="254" id="Image3"></a></td>
+      <td><a href="https://brickymerch.com/" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','images/MERCHhood-gros.png',1)"><img src="images/MERCHhood-petit.png" alt="Hoodie blanc" width="317" height="254" id="Image4"></a></td>
+	  <!--Les premières flèches-->
+    <td><div id="d3" onClick="slideIt('toLeft')"><a  onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('flecheGauche','','images/flecheGauche-gros.png',1)"><img src="images/flecheGauche-petit.png" alt="Fleche gauche" width="200" height="199" id="flecheGauche"></a>
+	</div></td>
+	<td><div id="d2" onclick="slideIt('toRight')"><a  onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('flecheDroite','','images/flecheDroite-gros.png',1)"><img src="images/flecheDroite-petit.png" alt="Fleche droite" width="200" height="202" id="flecheDroite"></a>
+  	</div>
+	</td>
+      <td><img src="images/MERCHshirtGars-invers.png" width="317" height="254" alt="Chandail humain inversé"/></td>
+      <td><img src="images/invers-hood.png" width="317" height="254" alt="Hoodie blanc inversé"/></td>
+      <td><img src="images/invers-hoodHumain.png" width="317" height="254" alt="Hoodie humain inversé"/></td>
+      <td><img src="images/MERCHshirtGamingcloser-2@2x - Copie.png" width="317" height="254" alt="Chandail noir inversé"/></td>
+      <td><img src="images/inver-shirt.png" width="317" height="254" alt="Chandail blanc inversé"/></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<br><br>
+	<p style="position: absolute; top: 1500px;left: 120px">Autres articles</p>
+	<div id="d4">
+  <!--Tableau des autres articles-->
+<table width="200" border="0" cellpadding="15" style="position: absolute;top: 650px;">
+  <tbody>
+
+    <tr>
+      <td><a href="https://brickymerch.com/" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('tasse','','images/MERCHtasse-gros.png',0)"><img src="images/MERCHtasse-petit.png" alt="Tasse" width="317" height="254" id="tasse"></a></td>
+      <td><img src="images/invers-hood.png" width="317" height="254" alt="Hoodie blanc inversé"/></td>
+      <td><a href="https://brickymerch.com/" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Tuque','','images/MERCHtuque-gros.png',0)"><img src="images/MERCHtuque-petit.png" alt="Tuque" width="317" height="254" id="Tuque"></a></td>
+      <td><img src="images/MERCHshirtGars-invers.png" width="317" height="254" alt="Chandail humain inversé"/></td>
+      <td><a href="https://brickymerch.com/" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('team','','images/MERCHpicEquipe-gros.png',0)"><img src="images/MERCHpicEquipe-petit.png" alt="Équipe couleur" width="317" height="254" id="team"></a></td>
+	  <!--Les deuxièmes flèches-->
+    <td><div id="d6" onClick="slideItBas('toLeftBas')"><a  onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('gaucheBas','','images/flecheGauche-gros.png',0)"><img src="images/flecheGauche-petit.png" alt="Fleche gauche" width="200" height="199" id="gaucheBas"></a>
+	</div></td>
+	<td><div id="d5" onclick="slideItBas('toRightBas')"><a  onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('droite','','images/flecheDroite-gros.png',0)"><img src="images/flecheDroite-petit.png" alt="Fleche Droite" width="200" height="202" id="droite"></a>
+  	</div>
+	</td>
+      <td><img src="images/invers-MERCHtuque-petit.png" width="317" height="254" alt="Tuque inversé"/></td>
+      <td><img src="images/inver-shirt.png" width="317" height="254" alt="Chandail blanc inversé"/></td>
+      <td><img src="images/invers-hoodHumain.png" width="317" height="254" alt="Hoodie humain inversé"/></td>
+      <td><img src="images/MERCHshirtGamingcloser-2@2x - Copie.png" width="317" height="254" alt="Chandail noir inversé"/></td>
+      <td><img src="images/inver-shirt.png" width="317" height="254" alt="Chandail blanc inversé"/></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<!--Footer-->
+<div class="footer"  >
+  <table align="center" style="margin-top: 25px" width="400" border="0">
+    <tbody>
+      <tr align="center">
+        <td class="grad2"><a href="https://www.facebook.com/esports.reapers/" target="_blank"> <img src="images/FBLogo.png" width="50px" alt="Facebook"></a></td>
+        <td class="grad2"> <a href="https://twitter.com/ReaperEsports10" target="_blank"> <img src="images/TWLogo.png" width="50px" alt="Twitter"></a></td>
+        <td class="grad2"> <a href="https://www.instagram.com/reaperesportsteam/" target="_blank"> <img src="images/IGLogo.png" width="50px" alt="Instagram"></a></td>
+        <td class="grad2"> <a href="https://www.youtube.com/channel/UCquwA8hiup6zIerKdDUi-YQ" target="_blank"> <img src="images/YTLogo.png" width="50px" alt="YouTube"></a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

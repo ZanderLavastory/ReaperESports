@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Accueuil</title>
+<style>
+.footer {
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+	width: 100%;
+	height: 110px;
+	background-color: black;
+	color: hotpink;
+}
+.header {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	background-color: black;
+	color: #707070;
+	font-family: Microsoft Yi Baiti;
+	font-size: 35px;
+}
+#bouton:hover {
+	filter: sepia(1) hue-rotate(165deg) saturate(2) brightness(1.5);
+}
+p {
+	font-size: 40px;
+	font-family: MingLiU-ExtB;
+	color: white;
+}
+a {
+	color: #707070;
+	text-decoration: none; /* no underline */
+}
+.menu:hover {
+	background-color: rgba(255,255,255,0.075);
+}
+html {
+	height: 1920px;
+	background-image: linear-gradient(#750F73, #03062E);
+	overflow-y: scroll;
+	position: relative;
+	min-height: 100%;
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: 110px;
+	color: white;
+	font-family: Georgia;
+	font-style: italic;
+}
+.grad2 {
+	filter: none;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	cursor: pointer;
+	transition: all 300ms ease;
+}
+.grad2:hover {
+	filter: none;
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+}
+</style>
+</head>
+
+<body>
+	
+<img src="images/Photos2.png" alt="Image D'Équipe Durant Match" width="1920"style="position:fixed;margin-top: -100px; opacity: 0.75" />
+	<!--Texte Important-->
+<h1 style="position: absolute;top: 4%; left: 29.5%">TOURNOI LoL<br>
+  5 DÉCEMBRE</h1>
+	
+<!--Bouton Sièges-->	
+<div id="bouton" style="position: absolute;top: 28%; left: 28.75%" ><a href="https://www.twitchcon.com/tickets/" target=_blank> <img src="images/Bouton.png" alt="Bouton Pour Réservez Sièges">
+  <p style="position: absolute;top: -17%; left: 4%;font-family: tahoma; font-size: 65px; font-style:normal"><strong>RÉSERVEZ VOS SIÈGES</strong></p>
+  </a> </div>
+	
+<!--Bouton qui mène vers le bas-->	
+<div onClick="window.scrollTo(0,1920)" style="position: absolute;top: 44%; left: 48%">
+  <p style="margin-left: -7px;font-size: 15px">À PROPOS</p>
+  <img   src="images/FlecheBas.png" alt="Flèche qui point vers le bas"> </div>
+	
+<!--Introduction à l'équipe-->
+<p style="position: absolute;bottom: 30%; left: 3%; font-size: 65px;line-height: 50px">À PROPOS<br>
+  DE NOUS:</p>
+<p style="position: absolute;bottom: 8%; left: 18%;margin-right: 45%">Aliquam ultrices risus a felis venenatis consectetur. Sed a erat lacus. Vivamus mi dolor, elementum ac volutpat eget, malesuada sagittis metus. Cras consectetur ligula eleifend vehicula vehicula. Integer vitae pellentesque lorem. Morbi sagittis massa vel sagittis congue. Etiam tempor pellentesque dui eu laoreet. Aliquam eget ex augue. Aenean ornare vulputate tellus sit amet feugiat. </p>
+<img  style="width: 400px; position: absolute; bottom: 15%; right: 10%" src="images/Reaper.png" alt="Logo Reaper">
+	
+<!--Header et Menu de Navigation-->
+<div class="header" > <a href="index.html" title="Accueuil"><img  style="float: left; margin-left: 20px" width="105px" src="images/Reaper.png" alt="Logo Reaper" /></a>
+  <p style="float:left; margin-top: 20px; margin-left: 30px; font-family:Microsoft Yi Baiti; color: #707070;font-size: 35px" >REAPER eSports</p>
+  <table  height="85" width="900" border="0" align="right" style="margin-top: -4px" >
+    <tbody align="center" >
+      <tr>
+        <td style="background-color: rgba(255,255,255,0.08)" ><a href="index.html" title="Accueuil">ACCUEUIL</a></td>
+        <td class="menu" width="190"><a href="jeux.html" title="Jeux">JEUX</a></td>
+        <td class="menu" width="190" ><a href="roster.html" title="Roster">ROSTER</a></td>
+        <td class="menu" width="300"><a href="Marchandise.html" title="Marchandises">MARCHANDISES</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+	
+<!--Footer et Liens de Réseaux Sociaux-->
+<div class="footer"  >
+  <table align="center" style="margin-top: 25px" width="400" border="0">
+    <tbody>
+      <tr align="center">
+        <td class="grad2"><a href="https://www.facebook.com/esports.reapers/" target="_blank"> <img src="images/FBLogo.png" width="50px" alt="Facebook"></a></td>
+        <td class="grad2"><a href="https://twitter.com/ReaperEsports10" target="_blank"> <img src="images/TWLogo.png" width="50px" alt="Twitter"></a></td>
+        <td class="grad2"><a href="https://www.instagram.com/reaperesportsteam/?hl=fr-ca" target="_blank"> <img src="images/IGLogo.png" width="50px" alt="Instagram"></a></td>
+        <td class="grad2"><a href="https://www.youtube.com/channel/UCquwA8hiup6zIerKdDUi-YQ" target="_blank"> <img src="images/YTLogo.png" width="50px" alt="YouTube"></a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
